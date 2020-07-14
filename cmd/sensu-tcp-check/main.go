@@ -20,7 +20,7 @@ func main() {
 
 	conn, err := net.DialTimeout("tcp", os.Args[1], 10*time.Second)
 	if err != nil {
-		log.Println(err.Error())
+		log.Printf("ERROR: %s\n\n", err.Error())
 		fmt.Printf("%s %d %d\n", "sensu.tcp.available", 0, timeBegin.Unix())
 		fmt.Printf("%s %d %d\n", "sensu.tcp.duration", 0, timeBegin.Unix())
 
@@ -33,6 +33,7 @@ func main() {
 
 	responseTime := time.Since(timeBegin).Milliseconds()
 
+	log.Printf("OK\n\n")
 	fmt.Printf("%s %d %d\n", "sensu.tcp.available", 1, timeBegin.Unix())
 	fmt.Printf("%s %d %d\n", "sensu.tcp.duration", responseTime, timeBegin.Unix())
 

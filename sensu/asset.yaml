@@ -3,5 +3,5 @@ api_version: core/v2
 metadata:
   name: sensu-tcp-check
 spec:
-  sha512: ec753f34478385b364766eccee867688ecef4311701ac1c0c40cf7971eaae4a167fc904cc30d0fca73c6c43d5215c39f6650d84c6e8ce13088991979badb16c9
-  url: https://github.com/DENICeG/sensu-tcp-check/releases/download/v1.0.1/sensu-tcp-check_v1.0.1_linux_amd64.tar.gz
+  sha512: 9247312038a5e2b7f3294b6e3e6d70ead5b072b9bf6c521416a2c92c24489395a34fa4fd47712719966381c9a5c55cf013109bd8ffeda86fe152ea91a97e5e45
+  url: https://github.com/DENICeG/sensu-tcp-check/releases/download/v1.0.2/sensu-tcp-check_v1.0.2_linux_amd64.tar.gz
